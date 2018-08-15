@@ -5,16 +5,10 @@ const og = require('../src/index.js')({
 })
 
 og.enable(process.stdout)
+og.enable(process.stderr)
 
 console.info('Hi!')
 console.debug('Hmm')
 console.log('Whoa')
-
-og.disable(process.stdout)
-
-og.enable(process.stderr)
-
 console.error('Oops..')
 console.warn('Uh-oh')
-
-og.disable(process.stderr)

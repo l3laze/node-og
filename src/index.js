@@ -13,10 +13,7 @@ function verifyOptions (opts = {}) {
 
   // debug('Options -- after\n\t%j', opts)
 
-  return Object.assign({
-    'logPath': '',
-    'logFile': ''
-  }, opts)
+  return opts
 }
 
 module.exports = function (opts) {
@@ -39,7 +36,7 @@ module.exports = function (opts) {
 
         for (i = 0; i < ignorePatterns.length; i++) {
           if (ignorePatterns[ i ].test(string) === false) {
-            debug('Logging line: %s', string)
+            // debug('Logging line: %s', string)
 
             try {
               appendFileSync(pjoin(options.logPath, options.logFile), string)
