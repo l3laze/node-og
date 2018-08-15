@@ -1,8 +1,8 @@
-og
+node-og
 
 A mini logging module.
 
-`yarn add og`
+`yarn add node-og`
 
 # **Usage**
 
@@ -11,7 +11,7 @@ A mini logging module.
 ###### **`test-og.js`**
 
 ```javascript
-const og = require('og')({
+const og = require('node-og')({
   logPath: 'path/to/og/to',
   logFile: 'og_file.txt'
 })

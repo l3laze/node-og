@@ -1,17 +1,25 @@
 {
-  "name": "og",
-  "version": "1.0.0-rc0",
+  "name": "node-og",
+  "version": "1.0.0-rc1",
   "description": "A mini logging module.",
+  "homepage": "https://github.com/l3laze/og#readme",
   "main": "src/index.js",
   "author": "Tom Shaver <l3l_aze@yahoo.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+github.com/l3laze/og.git"
+  },
+  "bugs": {
+    "url": "https://github.com/l3laze/og/issues"
+  },
   "files": [
     "src/index.js"
   ],
-  "scripts": {
-    "test": "node tests/test.js"
-  },
   "dependencies": {
     "ebug": "^1.0.0-rc5"
+  },
+  "scripts": {
+    "test": "node tests/test.js"
   }
 }
