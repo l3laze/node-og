@@ -23,7 +23,7 @@ module.exports = function (opts) {
   const module = {}
   const options = verifyOptions(opts)
   let oldStream
-  const ignorePatterns = [
+  let ignorePatterns = [
     /\+(\d)+ms/
   ]
 
@@ -50,7 +50,7 @@ module.exports = function (opts) {
           }
         }
       }
-    })(stream.write)
+    }(stream.write))
   }
 
   module.disable = function disable (stream) {
